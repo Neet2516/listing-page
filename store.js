@@ -66,8 +66,8 @@ async function loadProductPage() {
                 <img src="${product.thumbnail}" alt="${product.title}">
                 <div class="product-details">
                     <h2>${product.title}</h2>
-                    <p style="color: #666; margin: 10px 0;">${product.description}</p>
-                    <p style="font-size: 1.5rem; color: #27ae60; font-weight: bold;">$${product.price}</p>
+                    <p>${product.description}</p>
+                    <p class="product-price">$${product.price}</p>
                     <p>Rating: ${product.rating} ⭐</p>
                     <p>Stock: ${product.stock} left</p>
                     <br>
@@ -101,7 +101,7 @@ function loadCartPage() {
         cartItemsDiv.innerHTML += `
             <div class="cart-item">
                 <img src="${item.thumbnail}" alt="${item.title}">
-                <div style="flex: 1; margin-left: 15px;">
+                <div class="cart-item-details">
                     <h4>${item.title}</h4>
                     <p>$${item.price} x ${item.quantity}</p>
                 </div>
@@ -120,13 +120,13 @@ function loadCartPage() {
         <div class="summary-row"><span>Subtotal:</span> <span>$${subtotal.toFixed(2)}</span></div>
         <div class="summary-row"><span>Tax (10%):</span> <span>$${tax.toFixed(2)}</span></div>
         <div class="summary-row total"><span>Total:</span> <span>$${total.toFixed(2)}</span></div>
-        <button class="btn-success" style="width: 100%; margin-top: 15px;" onclick="checkout()">Proceed to Checkout</button>
+        <button class="btn-success" onclick="checkout()">Proceed to Checkout</button>
     `;
 }
 
 // --- UTILITY FUNCTIONS ---
 function viewProduct(id) {
-    window.location.href = `product.html?id=${id}`;
+    window.location.href = `details.html?id=${id}`;
 }
 
 function addToCartFromListing(id) {
