@@ -1,6 +1,6 @@
-# StoreFront - Clean E-Commerce Web App
+# StoreFront - Listing Page
 
-A lightweight, clean, and highly professional vanilla HTML/CSS/JavaScript e-commerce store application. It features a modern, slate-themed, minimalist UI that lists products from a dummy catalog, displays individual product details, and handles full cart operations.
+Alightweight, clean, and highly professional vanilla HTML/CSS/JavaScript e-commerce store application. It features a modern, slate-themed, minimalist UI that lists products from a dummy catalog, displays individual product details, and handles full cart operations.
 
 ## Features
 
